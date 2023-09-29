@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+.focus-app{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+}
+body{
+    background-color: black;
+}
+#calculator{
+    width: 370px;
+    height: auto;
+    margin: 30px auto;
+    padding: 30px;
+    background:radial-gradient(black 33%, white 33%) 0% 0% / 10px 10px;
+    border-radius: 20px;
+}
+.operations-screen{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operations-screen input{
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    padding: 0 15px;
+    font-size: 1.6em;
+    font-weight: 200;
+    border: 4px solid black;
+}
+.btns-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px,auto);
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+button{
+    font-size: 1.4em;
+    background-color: aliceblue;
+    box-shadow: 6px 5px black;
+    border: 4px solid black;
+}
+.btn-plus{
+    grid-column: 4 / 4;
+    grid-row: 4 / 6;
+    padding-top: 80px;
+}
+.btn0{
+    grid-column: 1 / 3;
+    text-align: start;
+    padding-left:20px;
+}
